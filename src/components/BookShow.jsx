@@ -2,7 +2,6 @@ import { useState } from 'react'
 import BookEdit from './BookEdit.jsx'
 
 function BookShow({ book, onDelete, onEdit }) {
-
     const [showEdit, setShowEdit] = useState(false)
 
     const handleSubmit = (id, newTitle) => {
@@ -21,7 +20,7 @@ function BookShow({ book, onDelete, onEdit }) {
             <div className="actions">
                 <button
                     className="edit"
-                    onClick={handleSubmit}
+                    onClick={() => setShowEdit(!showEdit)}
                 >
                     Edit
                 </button>
