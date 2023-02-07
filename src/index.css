@@ -13137,5 +13137,5 @@ screen and (min-width:769px) {
     -webkit-transform-origin: center center;
     transform-origin: center center;
     width: 20px;
-    z-index: 10
+    /* z-index: 10 */
 }
